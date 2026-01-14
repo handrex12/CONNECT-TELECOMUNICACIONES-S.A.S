@@ -3,179 +3,563 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planes - Connect Telecomunicaciones</title>
+    <title>CONNECT- Planes de Internet</title>
     <link rel="stylesheet" href="Recurses/planes1.css">
+    <link rel="stylesheet" href="Recurses/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Navbar -->
+     <header>
         <div class="header-content">
             <div class="logo">
-                <img src="https://i.imgur.com/8QZ6yKX.png" alt="Connect Telecomunicaciones">
+                <img src="Imagenes/LOGO.png" alt="Connect Telecomunicaciones">
+                
             </div>
             <nav>
-                <a href="#inicio">Inicio</a>
+                <a href="index.html">Inicio</a>
                 <a href="#servicios">Servicios</a>
+                <a href="#testvelocidad">Test de Velocidad</a>
                 <a href="#radio-enlace">Radio Enlace</a>
-                <a href="#fibra">Fibra Óptica</a>
-                <a href="#planes">Planes</a>
+                <a href="#fibra-optica">Fibra Óptica</a>
                 <a href="#contacto">Contacto</a>
+                <a href="#Fundacion">Fundacion Connect</a>
                 <a href="#cotizacion" class="cta-button">Solicitar Cotización</a>
             </nav>
         </div>
     </header>
 
-    <section class="planes-hero">
-        <div class="planes-hero-content">
-            <p class="planes-label">PLANES COMPLETOS</p>
-            <h1>Todos Nuestros Planes de Internet</h1>
-            <p class="planes-subtitle">Encuentra el plan perfecto para ti con opciones flexibles de instalación y velocidades adaptadas a tus necesidades</p>
-        </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-tag">PLANES COMPLETOS</span>
+        <h1 class="hero-title">Todos Nuestros Planes de Internet</h1>
+        <p class="hero-subtitle">Encuentra el plan perfecto para ti con opciones flexibles y precios accesibles para todo tipo de necesidades.</p>
     </section>
 
-    <section class="planes-section">
-        <div class="planes-wrapper">
-            <div class="plan-category-header">
-                <div class="plan-category-icon">📶</div>
-                <div class="plan-category-info">
+    <!-- Contenedor Principal de Planes -->
+    <main class="planes-container">
+        <div class="planes-card">
+            <!-- Cabecera del Contenedor -->
+            <div class="planes-header">
+                <div class="wifi-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                        <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                        <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                    </svg>
+                </div>
+                <div class="planes-header-text">
                     <h2>Plan Básico</h2>
                     <p>Internet ilimitado para uso residencial</p>
                 </div>
             </div>
 
-            <div class="plans-grid">
-                <!-- Plan 15 Mbps -->
-                <div class="plan-card">
-                    <div class="plan-card-header">
-                        <div class="plan-label">INTERNET ILIMITADO</div>
-                        <div class="plan-speed">15 Mbps</div>
-                    </div>
-                    <div class="plan-price-main">
-                        <span class="price">$60.000</span>
-                        <span class="period">por mes</span>
-                    </div>
-                    <div class="plan-details">
-                        <div class="plan-option">
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <div>
-                                <p class="option-text">Con cláusula de permanencia (12 meses)</p>
-                                <p class="option-price">$150.000</p>
-                            </div>
+            <!-- Grid de Precios -->
+            <div class="precios-grid">
+                <!-- Tarjeta 1 - 15 Mbps -->
+                <div class="precio-card">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad">15 Mbps</span>
                         </div>
-                        <div class="plan-option">
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <div>
-                                <p class="option-text">Sin cláusula de permanencia</p>
-                                <p class="option-price">$250.000</p>
-                            </div>
+                        <div class="precio-valor">
+                            <span class="precio">$60.000</span>
+                            <span class="precio-periodo">por mes</span>
                         </div>
                     </div>
-                    <button class="btn-plan">Contratar Ahora</button>
+                    <hr class="divisor">
+                    <ul class="costos-lista">
+                        <li>
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Con cláusula de permanencia (12 meses)</span>
+                            <strong>$150.000</strong>
+                        </li>
+                        <li>
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Sin cláusula de permanencia</span>
+                            <strong>$250.000</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar">Contratar Ahora</button>
                 </div>
 
-                <!-- Plan 20 Mbps -->
-                <div class="plan-card">
-                    <div class="plan-card-header">
-                        <div class="plan-label">INTERNET ILIMITADO</div>
-                        <div class="plan-speed">20 Mbps</div>
-                    </div>
-                    <div class="plan-price-main">
-                        <span class="price">$70.000</span>
-                        <span class="period">por mes</span>
-                    </div>
-                    <div class="plan-details">
-                        <div class="plan-option">
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <div>
-                                <p class="option-text">Con cláusula de permanencia (12 meses)</p>
-                                <p class="option-price">$150.000</p>
-                            </div>
+                <!-- Tarjeta 2 - 20 Mbps -->
+                <div class="precio-card">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad">20 Mbps</span>
                         </div>
-                        <div class="plan-option">
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <div>
-                                <p class="option-text">Sin cláusula de permanencia</p>
-                                <p class="option-price">$250.000</p>
-                            </div>
+                        <div class="precio-valor">
+                            <span class="precio">$70.000</span>
+                            <span class="precio-periodo">por mes</span>
                         </div>
                     </div>
-                    <button class="btn-plan">Contratar Ahora</button>
+                    <hr class="divisor">
+                    <ul class="costos-lista">
+                        <li>
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Con cláusula de permanencia (12 meses)</span>
+                            <strong>$150.000</strong>
+                        </li>
+                        <li>
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Sin cláusula de permanencia</span>
+                            <strong>$250.000</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar">Contratar Ahora</button>
                 </div>
 
-                <!-- Plan 25 Mbps -->
-                <div class="plan-card">
-                    <div class="plan-card-header">
-                        <div class="plan-label">INTERNET ILIMITADO</div>
-                        <div class="plan-speed">25 Mbps</div>
-                    </div>
-                    <div class="plan-price-main">
-                        <span class="price">$80.000</span>
-                        <span class="period">por mes</span>
-                    </div>
-                    <div class="plan-details">
-                        <div class="plan-option">
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <div>
-                                <p class="option-text">Con cláusula de permanencia (12 meses)</p>
-                                <p class="option-price">$150.000</p>
-                            </div>
+                <!-- Tarjeta 3 - 25 Mbps -->
+                <div class="precio-card">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad">25 Mbps</span>
                         </div>
-                        <div class="plan-option">
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <div>
-                                <p class="option-text">Sin cláusula de permanencia</p>
-                                <p class="option-price">$250.000</p>
-                            </div>
+                        <div class="precio-valor">
+                            <span class="precio">$80.000</span>
+                            <span class="precio-periodo">por mes</span>
                         </div>
                     </div>
-                    <button class="btn-plan">Contratar Ahora</button>
+                    <hr class="divisor">
+                    <ul class="costos-lista">
+                        <li>
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Con cláusula de permanencia (12 meses)</span>
+                            <strong>$150.000</strong>
+                        </li>
+                        <li>
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Sin cláusula de permanencia</span>
+                            <strong>$250.000</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar">Contratar Ahora</button>
                 </div>
 
-                <!-- Plan 30 Mbps -->
-                <div class="plan-card">
-                    <div class="plan-card-header">
-                        <div class="plan-label">INTERNET ILIMITADO</div>
-                        <div class="plan-speed">30 Mbps</div>
-                    </div>
-                    <div class="plan-price-main">
-                        <span class="price">$100.000</span>
-                        <span class="period">por mes</span>
-                    </div>
-                    <div class="plan-details">
-                        <div class="plan-option">
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <div>
-                                <p class="option-text">Con cláusula de permanencia (12 meses)</p>
-                                <p class="option-price">$150.000</p>
-                            </div>
+                <!-- Tarjeta 4 - 30 Mbps -->
+                <div class="precio-card">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad">30 Mbps</span>
                         </div>
-                        <div class="plan-option">
-                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <div>
-                                <p class="option-text">Sin cláusula de permanencia</p>
-                                <p class="option-price">$250.000</p>
-                            </div>
+                        <div class="precio-valor">
+                            <span class="precio">$100.000</span>
+                            <span class="precio-periodo">por mes</span>
                         </div>
                     </div>
-                    <button class="btn-plan">Contratar Ahora</button>
+                    <hr class="divisor">
+                    <ul class="costos-lista">
+                        <li>
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Con cláusula de permanencia (12 meses)</span>
+                            <strong>$150.000</strong>
+                        </li>
+                        <li>
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Sin cláusula de permanencia</span>
+                            <strong>$250.000</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar">Contratar Ahora</button>
                 </div>
             </div>
         </div>
+
+        <!-- Nueva sección Plan Premium -->
+        <div class="planes-card planes-card-premium">
+            <!-- Cabecera del Contenedor Premium -->
+            <div class="planes-header planes-header-premium">
+                <div class="wifi-icon premium-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                    </svg>
+                </div>
+                <div class="planes-header-text">
+                    <h2>Plan Premium</h2>
+                    <p>Alta velocidad para familias y trabajo remoto</p>
+                </div>
+                <span class="badge-popular">Más Popular</span>
+            </div>
+
+            <!-- Grid de Precios Premium - 3 columnas -->
+            <div class="precios-grid precios-grid-premium">
+                <!-- Tarjeta 1 - 160 Mbps -->
+                <!-- Agregando clase para degradado y cambiando icono X por herramientas cruzadas -->
+                <div class="precio-card precio-card-premium-gradient">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad">160 Mbps</span>
+                        </div>
+                        <div class="precio-valor">
+                            <span class="precio">$60.000</span>
+                            <span class="precio-periodo">por mes</span>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <ul class="costos-lista costos-lista-simple">
+                        <li>
+                            <svg class="tools-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                            <span>Costo de Instalación</span>
+                            <strong class="precio-tachado">$100.000</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar">Contratar Ahora</button>
+                </div>
+
+                <!-- Tarjeta 2 - 200 Mbps -->
+                <div class="precio-card precio-card-premium-gradient">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad">200 Mbps</span>
+                        </div>
+                        <div class="precio-valor">
+                            <span class="precio">$70.000</span>
+                            <span class="precio-periodo">por mes</span>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <ul class="costos-lista costos-lista-simple">
+                        <li>
+                            <svg class="tools-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                            <span>Costo de Instalación</span>
+                            <strong class="precio-tachado">$100.000</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar">Contratar Ahora</button>
+                </div>
+
+                <!-- Tarjeta 3 - 300 Mbps -->
+                <div class="precio-card precio-card-premium-gradient">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad">300 Mbps</span>
+                        </div>
+                        <div class="precio-valor">
+                            <span class="precio">$100.000</span>
+                            <span class="precio-periodo">por mes</span>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <ul class="costos-lista costos-lista-simple">
+                        <li>
+                            <svg class="tools-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                            <span>Costo de Instalación</span>
+                            <strong class="precio-tachado">$100.000</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar">Contratar Ahora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nueva sección Plan Mas Connect (verde) -->
+        <div class="planes-card planes-card-connect">
+            <!-- Cabecera del Contenedor Connect -->
+            <div class="planes-header planes-header-connect">
+                <div class="wifi-icon connect-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </div>
+                <div class="planes-header-text">
+                    <h2>Plan Mas Connect</h2>
+                    <p class="connect-subtitle">Instalación gratuita y alta velocidad</p>
+                </div>
+                <span class="badge-connect">Sin Costo de Instalación</span>
+            </div>
+
+            <!-- Grid de Precios Connect - 2x2 -->
+            <div class="precios-grid">
+                <!-- Tarjeta 1 - 120 Mbps -->
+                <div class="precio-card precio-card-connect">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad velocidad-connect">120 Mbps</span>
+                        </div>
+                        <div class="precio-valor">
+                            <span class="precio">$50.000</span>
+                            <span class="precio-periodo">por mes</span>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <ul class="costos-lista costos-lista-simple">
+                        <li>
+                            <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                <rect x="2" y="7" width="20" height="5"></rect>
+                                <line x1="12" y1="22" x2="12" y2="7"></line>
+                                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                            </svg>
+                            <span class="instalacion-label">Instalación</span>
+                            <strong class="instalacion-gratis">Sin Costo</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar btn-contratar-connect">Contratar Ahora</button>
+                </div>
+
+                <!-- Tarjeta 2 - 160 Mbps -->
+                <div class="precio-card precio-card-connect">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad velocidad-connect">160 Mbps</span>
+                        </div>
+                        <div class="precio-valor">
+                            <span class="precio">$60.000</span>
+                            <span class="precio-periodo">por mes</span>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <ul class="costos-lista costos-lista-simple">
+                        <li>
+                            <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                <rect x="2" y="7" width="20" height="5"></rect>
+                                <line x1="12" y1="22" x2="12" y2="7"></line>
+                                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                            </svg>
+                            <span class="instalacion-label">Instalación</span>
+                            <strong class="instalacion-gratis">Sin Costo</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar btn-contratar-connect">Contratar Ahora</button>
+                </div>
+
+                <!-- Tarjeta 3 - 200 Mbps -->
+                <div class="precio-card precio-card-connect">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad velocidad-connect">200 Mbps</span>
+                        </div>
+                        <div class="precio-valor">
+                            <span class="precio">$70.000</span>
+                            <span class="precio-periodo">por mes</span>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <ul class="costos-lista costos-lista-simple">
+                        <li>
+                            <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                <rect x="2" y="7" width="20" height="5"></rect>
+                                <line x1="12" y1="22" x2="12" y2="7"></line>
+                                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                            </svg>
+                            <span class="instalacion-label">Instalación</span>
+                            <strong class="instalacion-gratis">Sin Costo</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar btn-contratar-connect">Contratar Ahora</button>
+                </div>
+
+                <!-- Tarjeta 4 - 300 Mbps -->
+                <div class="precio-card precio-card-connect">
+                    <div class="precio-top">
+                        <div class="precio-info">
+                            <span class="precio-tag">INTERNET ILIMITADO</span>
+                            <span class="velocidad velocidad-connect">300 Mbps</span>
+                        </div>
+                        <div class="precio-valor">
+                            <span class="precio">$100.000</span>
+                            <span class="precio-periodo">por mes</span>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <ul class="costos-lista costos-lista-simple">
+                        <li>
+                            <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                <rect x="2" y="7" width="20" height="5"></rect>
+                                <line x1="12" y1="22" x2="12" y2="7"></line>
+                                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                            </svg>
+                            <span class="instalacion-label">Instalación</span>
+                            <strong class="instalacion-gratis">Sin Costo</strong>
+                        </li>
+                    </ul>
+                    <button class="btn-contratar btn-contratar-connect">Contratar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Wrapper con fondo gris para separar CTA del footer -->
+    <section class="cta-wrapper">
+        <div class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title">¿No encuentras el plan ideal?</h2>
+                <p class="cta-subtitle">Contáctanos y diseñaremos un plan personalizado que se ajuste perfectamente a tus necesidades</p>
+                <a href="#contact-section" class="btn-asesor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                    </svg>
+                    Hablar con un Asesor
+                </a>
+            </div>
+        </div>
     </section>
+
+    <!-- Agregando footer completo -->
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="Imagenes/LOGO.png" alt="Connect Telecomunicaciones" class="footer-logo-img">
+
+            <!-- Columnas de Enlaces -->
+            <div class="footer-columns">
+                <!-- Empresa -->
+                <div class="footer-column">
+                    <h4>EMPRESA</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Nuestro Equipo</a></li>
+                        <li><a href="#">Trabaja con Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Servicios -->
+                <div class="footer-column">
+                    <h4>SERVICIOS</h4>
+                    <ul>
+                        <li><a href="#">Radio Enlace</a></li>
+                        <li><a href="#">Fibra Óptica</a></li>
+                        <li><a href="#">Planes Residenciales</a></li>
+                        <li><a href="#">Soluciones Empresariales</a></li>
+                    </ul>
+                </div>
+
+                <!-- Soporte -->
+                <div class="footer-column">
+                    <h4>SOPORTE</h4>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                        <li><a href="#">Estado del Servicio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra inferior del footer -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="footer-copyright">© 2025 CONNECT TELECOMUNICACIONES S.A.S. Todos los derechos reservados.</p>
+                
+                <!-- Redes Sociales -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100054561395446&locale=es_LA" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+
+                <p class="footer-powered">Powered by Connect Telecomunicaciones S.A.S.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/573124341928?text=Hola,%20quiero%20información%20sobre%20sus%20planes%20de%20internet" 
+           class="whatsapp-float" 
+           target="_blank"
+           aria-label="Contactar por WhatsApp">
+            <svg viewBox="0 0 32 32" fill="white" width="32" height="32">
+                <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.738 5.488 2.025 7.788L0 32l8.412-2.025A15.933 15.933 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.25c-2.413 0-4.725-.65-6.7-1.788l-.475-.287-4.95 1.188 1.2-4.8-.313-.5A13.2 13.2 0 012.75 16c0-7.313 5.938-13.25 13.25-13.25S29.25 8.687 29.25 16 23.312 29.25 16 29.25zm7.275-9.975c-.4-.2-2.363-1.162-2.725-1.3-.363-.137-.625-.2-.888.2-.262.4-1.025 1.3-1.262 1.563-.237.262-.475.3-.875.1-.4-.2-1.688-.625-3.213-1.988-1.187-1.062-1.987-2.375-2.225-2.775-.237-.4-.025-.613.175-.812.175-.175.4-.462.6-.688.2-.225.262-.375.4-.625.137-.25.062-.475-.025-.675-.088-.2-.888-2.137-1.213-2.925-.325-.775-.65-.675-.888-.688-.225-.012-.475-.012-.725-.012s-.663.088-1.013.438c-.35.35-1.325 1.3-1.325 3.163s1.363 3.675 1.55 3.925c.188.25 2.65 4.05 6.425 5.675.9.388 1.6.625 2.15.8.9.288 1.725.25 2.375.15.725-.113 2.363-.962 2.7-1.9.337-.937.337-1.737.237-1.9-.1-.162-.35-.262-.75-.462z"/>
+            </svg>
+        </a>
+        <div class="whatsapp-popup">
+            <div class="whatsapp-popup-header">
+                <svg viewBox="0 0 32 32" fill="white" width="24" height="24">
+                    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.738 5.488 2.025 7.788L0 32l8.412-2.025A15.933 15.933 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.25c-2.413 0-4.725-.65-6.7-1.788l-.475-.287-4.95 1.188 1.2-4.8-.313-.5A13.2 13.2 0 012.75 16c0-7.313 5.938-13.25 13.25-13.25S29.25 8.687 29.25 16 23.312 29.25 16 29.25zm7.275-9.975c-.4-.2-2.363-1.162-2.725-1.3-.363-.137-.625-.2-.888.2-.262.4-1.025 1.3-1.262 1.563-.237.262-.475.3-.875.1-.4-.2-1.688-.625-3.213-1.988-1.187-1.062-1.987-2.375-2.225-2.775-.237-.4-.025-.613.175-.812.175-.175.4-.462.6-.688.2-.225.262-.375.4-.625.137-.25.062-.475-.025-.675-.088-.2-.888-2.137-1.213-2.925-.325-.775-.65-.675-.888-.688-.225-.012-.475-.012-.725-.012s-.663.088-1.013.438c-.35.35-1.325 1.3-1.325 3.163s1.363 3.675 1.55 3.925c.188.25 2.65 4.05 6.425 5.675.9.388 1.6.625 2.15.8.9.288 1.725.25 2.375.15.725-.113 2.363-.962 2.7-1.9.337-.937.337-1.737.237-1.9-.1-.162-.35-.262-.75-.462z"/>
+                </svg>
+                <span>WhatsApp</span>
+            </div>
+            <div class="whatsapp-popup-body">
+                <p class="whatsapp-greeting">Hola 👋</p>
+                <p class="whatsapp-message">¡BIENVENIDOS A CONNECT TELECOMUNICACIONES S.A.S!</p>
+                <p class="whatsapp-question">¿En qué podemos ayudarte?</p>
+            </div>
+            <div class="whatsapp-popup-footer">
+                <a href="https://wa.me/573124341928?text=Hola,%20quiero%20información%20sobre%20sus%20planes%20de%20internet" 
+                   target="_blank"
+                   class="whatsapp-chat-btn">
+                    Abrir chat
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
