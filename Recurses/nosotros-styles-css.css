@@ -1,0 +1,1020 @@
+/* nosotros-styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.90rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fa1d1d;
+}
+
+.cta-button {
+    background: #e63946;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background: #d62828;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-nosotros {
+    height: 400px;
+    background: linear-gradient(135deg, rgba(230, 57, 70, 0.9), rgba(42, 82, 122, 0.9)),
+                url('https://images.pexels.com/photos/9290878/pexels-photo-9290878.jpeg')
+        center top / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.label {
+    color: #e63946;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #f70f0f;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Quiénes Somos */
+.quienes-somos {
+    padding: 5rem 0;
+    background: white;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.text-content p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.intro-text {
+    font-size: 1.15rem !important;
+    color: #333 !important;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.feature-item svg {
+    width: 24px;
+    height: 24px;
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.feature-item span {
+    color: #333;
+    font-weight: 500;
+}
+
+.image-content img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+/* Misión y Visión */
+.mision-vision {
+    padding: 5rem 0;
+    background: #f9fafb;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.mv-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.mv-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+
+.mision-card::before {
+    background: #e63946;
+}
+
+.vision-card::before {
+    background: #2a527a;
+}
+
+.mv-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mision-card .mv-icon {
+    background: #fee2e2;
+    color: #e63946;
+}
+
+.vision-card .mv-icon {
+    background: #dbeafe;
+    color: #2a527a;
+}
+
+.mv-icon svg {
+    width: 36px;
+    height: 36px;
+}
+
+.mv-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.mv-card p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Nuestro Trabajo */
+.nuestro-trabajo {
+    padding: 5rem 0;
+    background: white;
+}
+
+.trabajo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.trabajo-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 350px;
+    cursor: pointer;
+}
+
+.trabajo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.trabajo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 2rem;
+    transform: translateY(60px);
+    transition: transform 0.3s;
+}
+
+.trabajo-item:hover img {
+    transform: scale(1.1);
+}
+
+.trabajo-item:hover .trabajo-overlay {
+    transform: translateY(0);
+}
+
+.trabajo-overlay h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.trabajo-overlay p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Ubicación */
+.ubicacion {
+    padding: 5rem 0;
+    background: white;
+}
+
+.ubicacion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: stretch;
+}
+
+.ubicacion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-card {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    transition: all 0.3s;
+}
+
+.info-card:hover {
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transform: translateX(5px);
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: #fee2e2;
+    color: #e63946;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.info-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.info-content h4 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.info-content p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.btn-directions {
+    background: #e63946;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all 0.3s;
+    margin-top: auto;
+}
+
+.btn-directions:hover {
+    background: #d62828;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+}
+
+.btn-directions svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ubicacion-mapa {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    min-height: 500px;
+}
+
+.ubicacion-mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+/* Cobertura */
+.cobertura {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.cobertura-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cobertura-map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.map-icon {
+    width: 200px;
+    height: 200px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.municipios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.municipio-item {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.municipio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.15);
+    border-color: #e63946;
+}
+
+.municipio-item svg {
+    width: 20px;
+    height: 20px;
+    color: #e63946;
+    flex-shrink: 0;
+}
+
+.municipio-item span {
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.cobertura-cta {
+    background: linear-gradient(135deg, #e63946 0%, #d62828 100%);
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(230, 57, 70, 0.3);
+}
+
+.cta-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.cta-subtext {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-cobertura {
+    display: inline-block;
+    background: white;
+    color: #e63946;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cobertura:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Valores */
+.valores {
+    padding: 5rem 0;
+    background: #f9fafb;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.valor-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.valor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.valor-icon {
+    width: 70px;
+    height: 70px;
+    background: #fee2e2;
+    color: #e63946;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.valor-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.valor-card h4 {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+}
+
+.valor-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+    background: #e63946;
+    color: white;
+    padding: 3rem 2rem 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    margin-bottom: 1rem;
+}
+
+.footer-description {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.95rem;
+}
+
+.footer-section h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-section a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 1.5rem 0;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    width: 35px;
+    height: 35px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s;
+}
+
+.footer-social a:hover {
+    background: white;
+    color: #e63946;
+    transform: translateY(-3px);
+}
+
+.footer-social svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* WhatsApp Widget */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.whatsapp-float {
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+}
+
+.whatsapp-popup {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 300px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+
+.whatsapp-widget:hover .whatsapp-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.whatsapp-popup-header {
+    background: #25d366;
+    color: white;
+    padding: 1rem;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+}
+
+.whatsapp-popup-body {
+    padding: 1.5rem;
+    background: #f0f0f0;
+}
+
+.whatsapp-greeting {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.whatsapp-message {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.whatsapp-question {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.whatsapp-popup-footer {
+    padding: 1rem;
+}
+
+.whatsapp-chat-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #25d366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.whatsapp-chat-btn:hover {
+    background: #128c7e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .content-grid,
+    .mv-grid,
+    .trabajo-grid,
+    .valores-grid,
+    .ubicacion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ubicacion-mapa {
+        min-height: 350px;
+        order: 2;
+    }
+
+    .ubicacion-info {
+        order: 1;
+    }
+
+    .municipios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cobertura-cta {
+        padding: 2rem 1.5rem;
+    }
+
+    .cta-text {
+        font-size: 1.2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .whatsapp-widget {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+    }
+
+    .soporte-widget {
+        bottom: 90px;
+        right: 20px;
+    }
+
+    .soporte-float {
+        width: 50px;
+        height: 50px;
+    }
+
+    .soporte-float svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .soporte-popup {
+        width: 280px;
+        bottom: 70px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Botón flotante de WhatsApp - Soporte Técnico */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: white;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 999;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+    animation: none;
+}
+
+.whatsapp-icon {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.whatsapp-icon svg {
+    width: 28px;
+    height: 28px;
+    color: #25d366;
+}
+
+.whatsapp-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.support-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+.support-number {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1);
+    }
+    100% {
+        box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+    }
+}
+
+/* Responsive para botón flotante */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        padding: 0.7rem 1.2rem;
+        gap: 0.8rem;
+    }
+
+    .whatsapp-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .whatsapp-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .support-label {
+        font-size: 0.7rem;
+    }
+
+    .support-number {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-float {
+        padding: 0.6rem 1rem;
+    }
+
+    .whatsapp-text {
+        display: none;
+    }
+
+    .whatsapp-icon {
+        margin: 0;
+    }
+
+    .whatsapp-float {
+        border-radius: 50%;
+        padding: 0.8rem;
+    }
+}
