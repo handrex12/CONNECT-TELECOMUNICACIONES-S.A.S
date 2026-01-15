@@ -47,7 +47,7 @@
         <p>Ofrecemos soluciones de internet mediante tecnología de Radio Enlace y Fibra Óptica con la mejor calidad y
             soporte técnico especializado</p>
         <div class="hero-buttons">
-            <a href="#plans-header" class="btn-hero-primary">Ver Planes</a>
+            <a href="#planes" class="btn-hero-primary">Ver Planes</a>
             <a href="#contacto" class="btn-hero-secondary">Contactar Ahora</a>
         </div>
     </section>
@@ -119,7 +119,7 @@
     <div class="plans-container">
         <div class="plan-card">
             <h2 class="plan-title">Plan Básico</h2>
-            <div class="plan-badge">PLAN DE INTERNET SIMÉTRICO FIBRA ÓPTICA ZONA RURAL</div>
+            <div class="plan-badge">PLAN DE INTERNET SIMÉTRICO RADIO ENLACE ZONA RURAL</div>
             <div class="plan-price">$60.000 <span>/ mes</span></div>
             <div class="plan-speed">15 Mbps</div>
             <ul class="benefits">
@@ -456,26 +456,26 @@
             </div>
 
             <div class="contact-form-container">
-                <form class="contact-form">
+                <form class="contact-form" action="enviar.php" method="POST">
                     <div class="form-row">
                         <div class="form-group">
                             <label>Nombre Completo</label>
-                            <input type="text" placeholder="Tu nombre" required>
+                            <input type="text" name="nombre" placeholder="Tu nombre" required>
                         </div>
                         <div class="form-group">
                             <label>Correo Electrónico</label>
-                            <input type="email" placeholder="tu@email.com" required>
+                            <input type="email" name="email" placeholder="tu@email.com" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Teléfono</label>
-                        <input type="tel" placeholder="+57 300 123 4567" required>
+                        <input type="tel" name="telefono" placeholder="+57 300 123 4567" required>
                     </div>
 
                     <div class="form-group">
                         <label>Servicio de Interés</label>
-                        <select required>
+                        <select name="servicio" required>
                             <option value="">Selecciona un servicio</option>
                             <option value="radio">Radio Enlace</option>
                             <option value="fibra">Fibra Óptica</option>
@@ -486,7 +486,7 @@
 
                     <div class="form-group">
                         <label>Mensaje</label>
-                        <textarea placeholder="Cuéntanos cómo podemos ayudarte..." rows="4" required></textarea>
+                        <textarea name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte..." rows="4" required></textarea>
                         <span class="char-count">0/500</span>
                     </div>
 
