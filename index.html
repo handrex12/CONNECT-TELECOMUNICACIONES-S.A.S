@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CONNECT TELECOMUNICACIONES S.A.S.</title>
     <link rel="stylesheet" href="Recurses/styles.css">
     <link rel="stylesheet" href="Recurses/planes1.css">
@@ -27,11 +28,19 @@
                 <a href="planes1.html">Planes</a>
                 <a href="#contacto">Contacto</a>
                 <a href="fundacion_connect.html">Fundacion Connect</a>
-                <a href="#cotizacion" class="cta-button">Solicitar Cotización</a>
+                <a href="#contacto" class="cta-button">Solicitar Cotización</a>
             </nav>
         </div>
+        <button class="menu-toggle">☰</button>
     </header>
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
 
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
     <section class="hero">
         <div class="hero-badge">CONEXIÓN SÍN FONTERAS</div>
         <h1>Conectividad de Alta Velocidad Para Tu Hogar y Empresa</h1>

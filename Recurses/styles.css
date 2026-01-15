@@ -25,22 +25,53 @@ header {
     z-index: 100;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .cta-button {
+        position: static;
+    }
+}
+
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
-    padding-left: 0;
-    padding-right: 0rem;
+    padding: 0 1.5rem;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-
 }
 
 .logo img {
     height: 50px;
-    width: auto;
-    margin-left: -12.5rem;
+    margin-left: 0;
 }
 
 .navbar-company-name {
@@ -54,8 +85,7 @@ nav {
     gap: 1rem;
     align-items: center;
     margin-left: auto;
-    align-items: center;
-    margin-left: 30.5rem;
+    /* esto ya empuja a la derecha */
 }
 
 nav a {
@@ -78,7 +108,7 @@ nav a:hover {
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s, transform 0.2s;
-    position: absolute;
+    position: static;
     right: 1rem;
     /* usa 0 si lo quieres pegado */
 
@@ -1003,10 +1033,10 @@ nav a:hover {
 
     /* Footer */
     .footer {
-        background: #f51d2f;
+        background: #d71920;
+        /* rojo más elegante */
         color: white;
-        padding: 3rem 2rem 0;
-
+        padding: 2.5rem 1.5rem 0;
     }
 
     .footer-content {
@@ -1052,6 +1082,12 @@ nav a:hover {
         filter: brightness(0) invert(1);
     }
 
+    .footer-logo-img {
+        max-width: 150px;
+        margin: 0 auto 2rem;
+        display: block;
+    }
+
     .footer-bottom {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         padding: 1.5rem 0;
@@ -1067,6 +1103,21 @@ nav a:hover {
         gap: 1rem;
     }
 
+    .footer-bottom-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .footer-bottom-container {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.2rem;
+        }
+    }
+
     .footer-bottom p {
         color: rgba(255, 255, 255, 0.9);
         font-size: 0.9rem;
@@ -1079,21 +1130,14 @@ nav a:hover {
     }
 
     .footer-social a {
-        width: 35px;
-        height: 35px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        transition: all 0.3s;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.15);
     }
 
     .footer-social a:hover {
         background: white;
-        color: #e63946;
-        transform: translateY(-3px);
+        color: #d71920;
     }
 
     .footer-social svg {
@@ -1101,10 +1145,51 @@ nav a:hover {
         height: 18px;
     }
 
+    
+
+    .footer-powered {
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+
     .powered-by {
         font-size: 0.85rem !important;
         color: rgba(255, 255, 255, 0.7) !important;
     }
+
+    .footer-columns {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+
+    .footer-column h4 {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        opacity: 0.9;
+    }
+
+    .footer-column ul li a {
+        display: block;
+        padding: 6px 0;
+        font-size: 0.95rem;
+        opacity: 0.85;
+    }
+
+    .footer-column ul li a:hover {
+        opacity: 1;
+        padding-left: 6px;
+    }
+
+    @media (max-width: 768px) {
+        .footer-columns {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+
+
 
     /* WhatsApp Flotante */
     .whatsapp-widget {
@@ -1496,5 +1581,5 @@ nav a:hover {
             border-radius: 50%;
             padding: 0.8rem;
         }
-    }    
+    }
 }

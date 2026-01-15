@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navbar -->
-     <header>
+       <header>
         <div class="header-content">
             <div class="logo">
                 <img src="Imagenes/LOGO.png" alt="Connect Telecomunicaciones">
@@ -19,16 +19,27 @@
             </div>
             <nav>
                 <a href="index.html">Inicio</a>
-                <a href="index.html#planes">Servicios</a>
-                <a href="index.html#test">Test de Velocidad</a>
-                <a href="index.html#radio-enlace">Radio Enlace</a>
-                <a href="index.html#fibra-optica">Fibra Óptica</a>
-                <a href="index.html#contacto">Contacto</a>
+                <a href="#planes">Servicios</a>
+                <a href="#test">Test de Velocidad</a>
+                <a href="#radio-enlace">Radio Enlace</a>
+                <a href="#fibra-optica">Fibra Óptica</a>
+                <a href="planes1.html">Planes</a>
+                <a href="#contacto">Contacto</a>
                 <a href="fundacion_connect.html">Fundacion Connect</a>
-                <a href="index.html#cotizacion" class="cta-button">Solicitar Cotización</a>
+                <a href="index.html#contacto" class="cta-button">Solicitar Cotización</a>
             </nav>
         </div>
+        <button class="menu-toggle">☰</button>
     </header>
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
 
     <!-- Hero Section -->
     <section class="hero">
